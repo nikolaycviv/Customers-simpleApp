@@ -1,0 +1,23 @@
+<a href="#/customers">Go Back</a>
+<div class="panel panel-default" ng-init="getCustomer()">
+    <!-- <div class="panel-heading">
+        <h3 class="panel-title">{{customer.title}}</h3>
+    </div> -->
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item">Name: {{customer.firstname}}</li>
+                    <li class="list-group-item">Family: {{customer.lastname}}</li>
+                    <li class="list-group-item">Phone: {{customer.phone}}</li>
+                    <li class="list-group-item">Email: {{customer.email}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="pull-right">
+    <a href="#/customers/edit/{{customer._id}}">Edit</a> |
+    <a href="#" ng-click="removeCustomer(customer._id)">Delete</a>
+</div>

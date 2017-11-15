@@ -1,0 +1,31 @@
+<a href="#/customers">Go Back</a>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Edit Customer</h3>
+    </div>
+    <div class="panel-body">
+        <div class="row">
+            <div class="col-md-12">
+                <form ng-submit="updateCustomer()" ng-init="getCustomer()">
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" ng-model="customer.firstname" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                        <label>Last name</label>
+                        <input type="text" class="form-control" ng-model="customer.lastname" placeholder="Last name">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="text" class="form-control" ng-model="customer.phone" placeholder="Phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="text" class="form-control" ng-model="customer.email" placeholder="email">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
