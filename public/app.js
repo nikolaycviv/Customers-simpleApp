@@ -1,12 +1,12 @@
 /* global angular */
 
-const myApp = angular.module('myApp', ['ngRoute']);
+const myApp = angular.module('myApp', [ 'ngRoute' ]);
 
-myApp.config(['$locationProvider', function($locationProvider) {
+myApp.config([ '$locationProvider', function($locationProvider) {
     $locationProvider.hashPrefix('');
-}]);
+} ]);
 
-myApp.config(function($routeProvider) {
+myApp.config(($routeProvider) => {
     $routeProvider.when('/', {
         controller: 'CustomersController',
         templateUrl: 'views/customers.html'

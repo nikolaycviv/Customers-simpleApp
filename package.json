@@ -11,8 +11,8 @@
   "author": "Nikolay Ivanov",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "~1.17.2",
-    "express": "~4.15.4",
-    "mongoose": "^4.13.2"
+    "body-parser": "~1.18.3",
+    "express": "~4.16.4",
+    "mongoose": "^5.4.9"
   }
 }

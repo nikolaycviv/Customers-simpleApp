@@ -1,10 +1,10 @@
-const express = require('express'),
-    app = express(),
-    bodyParser = require('body-parser'),
-    mongoose = require('mongoose'),
-    routes = require('./routes/index');
+const express = require('express');
+const app = express();
+const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
+const routes = require('./routes/index');
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(`${__dirname}/public`));
 app.use(bodyParser.json());
 
 // Map gobal promise - get rid of warning;
